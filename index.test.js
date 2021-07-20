@@ -15,4 +15,16 @@ describe('rock paper scissors', () => {
     expect(play('paper', 'rock')).toEqual(1)
     expect(play('rock', 'paper')).toEqual(2)
   })
+
+  it('paper draws with paper', () => {
+    expect(play('paper', 'paper')).toEqual('draw')
+  })
+
+  it('scissors draws with scissors', () => {
+    expect(play('scissors', 'scissors')).toEqual('draw')
+  })
+
+  it('paper draws with paper', () => {
+    expect(play('paper', 'paper')).toEqual('draw')
+  })
 })

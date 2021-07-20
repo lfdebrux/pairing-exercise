@@ -14,6 +14,7 @@ function play (player1, player2) {
   } else if (player1 === 'paper' && player2 === 'rock') {
     return 1
   }
+  return 'draw'
 }
 
 module.exports = {
